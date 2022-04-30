@@ -1,2 +1,3 @@
 # msc-thesis
-MSc Thesis
+Instead of adding overleaf as submodule, will define it as another remote.
+
