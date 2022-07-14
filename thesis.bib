@@ -1,0 +1,245 @@
+@article{Ege2019,
+  abstract        = {In this paper, we propose a new motion planning method that aims to robustly and computationally efficiently solve path planning and navigation problems for unmanned surface vehicles (USVs). Our approach is based on synthesizing two different existing methodologies: sequential composition of dynamic behaviours and rapidly exploring random trees (RRT). The main motivation of this integrated solution is to develop a robust feedback-based and yet computationally feasible motion planning algorithm for USVs. In order to illustrate the main approach and show the feasibility of the method, we performed simulations and tested the overall performance and applicability for future experimental applications. We also tested the robustness of the method under relatively extreme environmental uncertainty. Simulation results indicate that our method can produce robust and computationally feasible solutions for a broad class of USVs.},
+  author          = {Ege, Emre and Ankarali, Mustafa Mert},
+  doi             = {10.1177/0142331218822698},
+  isbn            = {9781728145693},
+  issn            = {01423312},
+  journal         = {Transactions of the Institute of Measurement and Control},
+  keywords        = {RRT,Unmanned surface vehicle (USV),feedback motion planning,sequential composition},
+  mendeley-groups = {Motion/Path Planning/Papers,Motion/Path Planning},
+  number          = {12},
+  pages           = {3321--3330},
+  title           = {{Feedback motion planning of unmanned surface vehicles via random sequential composition}},
+  volume          = {41},
+  year            = {2019}
+}
+
+@article{Aicardi1995,
+  abstract = {With a special choice for the system state equations, the use of the simplest quadratic form as candidate Lyapunov function directly leads to the definition of very simple, smooth and effective closed loop control laws for unicycle-like vehicles, suitable to be used for steering, path following, and navigation. The authors provide simulation examples to show the effectiveness and, in a sense, the “natural behavior” of the obtained closed loop motions (whenever compared with our everyday driving experience). {\textcopyright} 1995 IEEE},
+  author   = {Aicardi, M. and Casalino, G. and Bicchi, A. and Balestrino, A.},
+  doi      = {10.1109/100.388294},
+  issn     = {10709932},
+  journal  = {IEEE Robotics and Automation Magazine},
+  number   = {1},
+  pages    = {27--35},
+  title    = {{Closed Loop Steering of Unicycle-like Vehicles via Lyapunov Techniques}},
+  volume   = {2},
+  year     = {1995}
+}
+
+@article{sng2004,
+  abstract = {This paper presents a sampling-based approach to computing and executing feedback-motion strategies by defining a global navigation function over a collection of neighborhoods in configuration space. The collection of neighborhoods and their underlying connectivity structure are captured by a sampling-based neighborhood graph (SNG), on which navigation functions are built. The SNG construction algorithm incrementally places new neighborhoods in the configuration space, using distance information provided by existing collision-detection algorithms. A termination condition indicates the probability that a specified fraction of the space is covered. Our implementation illustrates the approach for rigid and articulated bodies with up to six-dimensional configuration spaces. Even over such spaces, rapid online responses to unpredictable configuration changes can be made in a few microseconds on standard PC hardware. Furthermore, if the goal is changed, an updated navigation function can be quickly computed without performing additional collision checking.},
+  author   = {Yang, Libo and LaValle, Steven M.},
+  doi      = {10.1109/TRA.2004.824640},
+  issn     = {1042296X},
+  journal  = {IEEE Transactions on Robotics and Automation},
+  keywords = {Feedback control,Motion planning,Navigation functions,Potential fields},
+  number   = {3},
+  pages    = {419--432},
+  title    = {{The sampling-based neighborhood graph: An approach to computing and executing feedback motion strategies}},
+  volume   = {20},
+  year     = {2004}
+}
+
+% TODO: Find a better way to cite GTE, https://www.geometrictools.com/
+@misc{GTE2021,
+  author       = {David H. Eberly},
+  title        = {Geometric Tools},
+  year         = {2021},
+  publisher    = {GitHub},
+  journal      = {GitHub repository},
+  howpublished = {\url{https://github.com/davideberly/GeometricTools/releases/tag/GTE-version-5.14}},
+  commit       = {28d75abe58b1a0b24343bc10e7b3060ae7fe3bd6}
+}
+
+@article{Conner2007,
+  abstract = {We present a method for defining a hybrid control system capable of simultaneously addressing the global navigation and control problem for a convex-bodied wheeled mobile robot navigating amongst obstacles. The method uses parameterized continuous local feedback control policies that ensure safe operation over local regions of the free configuration space; each local policy is designed to respect nonholonomic constraints, bounds on velocities (inputs), and obstacles in the environment. The hybrid control system makes use of a collection of these local control policies in concert with discrete planning tools in order to plan, and replan in the face of changing conditions, while preserving the safety and convergence guarantees of the underlying control policies. This work is validated in simulation and experiment with a convex-bodied wheeled mobile robot. The approach is one of the first that combines formal planning with continuous feedback control guarantees for systems subject to nonholonomic constraints, input bounds, and non-trivial body shape.},
+  author   = {Conner, David C. and Choset, Howie and Rizzi, Alfred A.},
+  doi      = {10.15607/rss.2006.ii.008},
+  isbn     = {9780262693486},
+  issn     = {2330765X},
+  journal  = {Robotics: Science and Systems},
+  pages    = {57--64},
+  title    = {{Integrated planning and control for convex-bodied nonholonomic systems using local feedback control policies}},
+  volume   = {2},
+  year     = {2007}
+}
+
+@article{Lindemann2009,
+  abstract = {This paper presents a novel approach to computing feedback laws in the presence of obstacles. Instead of computing a trajectory between a pair of initial and goal states, our algorithms compute a vector field over the entire state space; all trajectories obtained from following this vector field are guaranteed to asymptotically reach the goal state. As a result, the vector field globally solves the navigation problem and provides robustness to disturbances in sensing and control. The vector field's integral curves (system trajectories) are guaranteed to avoid obstacles and are Cĝ̂ smooth. We construct a vector field with these properties by partitioning the space into simple cells, defining local vector fields for each cell, and smoothly interpolating between them to obtain a global vector field. We present an algorithm that computes these feedback controls for a kinematic point robot in an arbitrary dimensional space with piecewise linear boundary; the algorithm requires minimal preprocessing of the environment and is extremely fast during execution. For many practical applications in two-dimensional environments, full computation can be done in milliseconds. We also present an algorithm for computing feedback laws over cylindrical algebraic decompositions, thereby solving a smooth feedback version of the generalized piano movers' problem.},
+  author   = {Lindemann, Stephen R. and {La Valle}, Steven M.},
+  doi      = {10.1177/0278364908099462},
+  issn     = {02783649},
+  journal  = {International Journal of Robotics Research},
+  keywords = {Collision avoidance,Feedback control,Motion planning,Navigation functions,Potential fields,Vector fields},
+  number   = {5},
+  pages    = {600--621},
+  title    = {{Simple and efficient algorithms for computing smooth, collision-free feedback laws over given cell decompositions}},
+  volume   = {28},
+  year     = {2009}
+}
+
+@book{Lipson2001,
+  abstract  = {This chapter contains sections titled: Graphs, A* Algorithm, D* Algorithm, Optimal Plans View full abstract},
+  author    = {Howie, Choset and Kevin, Lynch and Seth, Hutchinson and George, Kantor and Wolfram, Burgard and Lydia, Kavraki and Sebastian, Thrun},
+  booktitle = {Artificial Life},
+  doi       = {10.1162/106454601317297031},
+  isbn      = {0262033275},
+  number    = {4},
+  pages     = {419--424},
+  title     = {{Principles of Robot Motion Theory, Algorithms, and Implementations}},
+  volume    = {7},
+  year      = {2001}
+}
+
+@article{Amidi1991,
+  author  = {Amidi, Omead and Thorpe, Charles},
+  title   = {Integrated mobile robot control},
+  year    = {1991},
+  journal = {Proceedings of SPIE - The International Society for Optical Engineering},
+  volume  = {1388},
+  pages   = {504 - 523},
+  url     = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-0025846568&partnerID=40&md5=3bd299d7b77b6b8af05d37f0adff5657}
+}
+
+@book{camacho2004,
+  author    = {Camacho, Eduardo and Bordons, Carlos},
+  year      = {2004},
+  month     = {01},
+  pages     = {},
+  title     = {Model Predictive Control},
+  volume    = {13},
+  isbn      = {978-0-85729-398-5},
+  doi       = {10.1007/978-0-85729-398-5},
+  publisher = {Springer}
+}
+
+@article{rrt2001,
+  abstract        = {This paper presents the first randomized approach to kinodynamic planning (also known as trajectory planning or trajectory design). The task is to determine control inputs to drive a robot from an ini ial configuration and velocity to a goal configuration and velocity while obeying physically based dynamical models and avoiding obstacles in the robot's environment. The authors consider generic systems that express the nonlinear dynamics of a robot in terms of the robot's high-dimensional configuration space. Kinodynamic planning is treated as a motion-planning problem in a higher dimensional state space that has both first-order differential constraints and obstacle-based global constraints. The state space serves the same role as the configuration space for basic path planning; however, standard randomized path-planning techniques do not directly apply to planning trajectories in the state space. The authors have developed a randomized planning approach that is particularly tailored to trajectory planning problems in high-dimensional state spaces. The basis for this approach is the construction of rapidly exploring random trees, which offer benefits that are similar to those obtained by successful randomized holonomic planning methods but apply to a much broader class of problems. Theoretical analysis of the algorithm is given. Experimental results are presented for an implementation that computes trajectories for hovercrafts and satellites in cluttered environments, resulting in state spaces of up to 12 dimensions.},
+  author          = {LaValle, Steven M and {James J. Kuffner}, Jr.},
+  doi             = {10.1177/02783640122067453},
+  journal         = {The International Journal of Robotics Research},
+  mendeley-groups = {Motion/Path Planning/MSc},
+  number          = {5},
+  pages           = {378--400},
+  title           = {{Randomized Kinodynamic Planning}},
+  url             = {https://doi.org/10.1177/02783640122067453},
+  volume          = {20},
+  year            = {2001}
+}
+
+@article{Kavraki1996,
+  annote  = {cited By 3820},
+  author  = {Kavraki, L E and {\v{S}}vestka, P and Latombe, J.-C. and Overmars, M H},
+  doi     = {10.1109/70.508439},
+  journal = {IEEE Transactions on Robotics and Automation},
+  number  = {4},
+  pages   = {566--580},
+  title   = {{Probabilistic roadmaps for path planning in high-dimensional configuration spaces}},
+  url     = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-0030212126&doi=10.1109%2F70.508439&partnerID=40&md5=d185c080ead320ecc488ca2b8dcfd72f},
+  volume  = {12},
+  year    = {1996}
+}
+
+@conference{Est1999,
+  author        = {Hsu, David and Latombe, Jean-Claude and Motwani, Rajeev},
+  title         = {Path planning in expansive configuration spaces},
+  journal       = {Proceedings - IEEE International Conference on Robotics and Automation},
+  year          = {1997},
+  volume        = {3},
+  pages         = {2719-2726},
+  note          = {cited By 256},
+  url           = {https://www.scopus.com/inward/record.uri?eid=2-s2.0-0030654330&partnerID=40&md5=7e156364aab2b04bfcd39883f8c33099},
+  document_type = {Conference Paper},
+  source        = {Scopus}
+}
+
+@article{Golan2017,
+  abstract  = {This paper suggests a novel method for a mobile robot to plan its path towards a target through an unknown environment, using sensors to discover new obstacles along the way. The method synthesizes an artificial temperature gradient throughout the known environment by numerically solving the heat conduction partial differential equation, where obstacles encountered during the robot navigation are 'hot' and the target is 'cold.' The temperature at all other points on the known environment grid are computed numerically, and are continuously updated to account for new obstacles. This method ensures the creation of navigational potential field with no danger of being trapped in local minima. A computer simulation demonstrates the technique on several environment types. In addition, an experiment was conducted on a mobile robot that can navigate indoors and outdoors in real time using this method. The simulations and experiment show that the temperature gradient method is robust in its ability to find paths, and is practical for online sensor based navigation of mobile robots.},
+  author    = {Yoav Golan and Shmil Edelman and Amir Shapiro and Elon Rimon},
+  doi       = {10.1109/LRA.2017.2665682},
+  issn      = {23773766},
+  issue     = {3},
+  journal   = {IEEE Robotics and Automation Letters},
+  keywords  = {Autonomous vehicle navigation,motion and path planning},
+  pages     = {1280-1287},
+  publisher = {IEEE},
+  title     = {Online Robot Navigation Using Continuously Updated Artificial Temperature Gradients},
+  volume    = {2},
+  year      = {2017}
+}
+
+@article{KODITSCHEK19925,
+  title    = {Task encoding: Toward a scientific paradigm for robot planning and control},
+  journal  = {Robotics and Autonomous Systems},
+  volume   = {9},
+  number   = {1},
+  pages    = {5-39},
+  year     = {1992},
+  issn     = {0921-8890},
+  doi      = {https://doi.org/10.1016/0921-8890(92)90031-S},
+  url      = {https://www.sciencedirect.com/science/article/pii/092188909290031S},
+  author   = {Daniel E. Koditschek},
+  keywords = {Robot planning, Robot control, Dynamical systems theory applied to robotics},
+  abstract = {An autonomous machine requires a description of its designated task in a language that it ‘understands’. The machine language of robots — physical mechanisms endowed with actuators and sensory devices for the purpose of performing work — is the language of dynamical systems. Since the diversity of robotic tasks is immense and our practical experience with computationally well endowed sensed and actuated mechanisms is still very slight, there seems little possibility of imposing at present a meaningful uniformity of description and command methodology on the practice of building these machines. However, a number of thematic desiderata can be articulated whose pursuit will arguably increase the ease of designing robotic algorithms that are predictably successful. This paper presents a summary of our approach to a number of robotic tasks that brings out by example the nature and utility of these desiderata.}
+}
+
+@article{KODITSCHEK1990412,
+  title    = {Robot navigation functions on manifolds with boundary},
+  journal  = {Advances in Applied Mathematics},
+  volume   = {11},
+  number   = {4},
+  pages    = {412-442},
+  year     = {1990},
+  issn     = {0196-8858},
+  doi      = {https://doi.org/10.1016/0196-8858(90)90017-S},
+  url      = {https://www.sciencedirect.com/science/article/pii/019688589090017S},
+  author   = {Daniel E Koditschek and Elon Rimon},
+  abstract = {This paper concerns the construction of a class of scalar valued analytic maps on analytic manifolds with boundary. These maps, which we term navigation functions, are constructed on an arbitrary sphere world—a compact connected subset of Euclidean n-space whose boundary is formed from the disjoint union of a finite number of (n − l)-spheres. We show that this class is invariant under composition with analytic diffeomorphisms: our sphere world construction immediately generates a navigation function on all manifolds into which a sphere world is deformable. On the other hand, certain well known results of S. Smale guarantee the existence of smooth navigation functions on any smooth manifold. This suggests that analytic navigation functions exist, as well, on more general analytic manifolds than the deformed sphere worlds we presently consider.}
+}
+
+@article{Rimon1992,
+  author  = {Rimon, E. and Koditschek, D.E.},
+  journal = {IEEE Transactions on Robotics and Automation},
+  title   = {Exact robot navigation using artificial potential functions},
+  year    = {1992},
+  volume  = {8},
+  number  = {5},
+  pages   = {501-518},
+  doi     = {10.1109/70.163777}
+}
+
+@inproceedings{Khatib1986,
+  author    = {Khatib, O.},
+  booktitle = {Proceedings. 1985 IEEE International Conference on Robotics and Automation},
+  title     = {Real-time obstacle avoidance for manipulators and mobile robots},
+  year      = {1985},
+  volume    = {2},
+  number    = {},
+  pages     = {500-505},
+  doi       = {10.1109/ROBOT.1985.1087247},
+  abstract  = {This paper presents a unique real-time obstacle avoidance approach for manipulators and mobile robots based on the artificial potential field concept. In this approach, collision avoidance, traditionally considered a high level planning problem, can be effectively distributed between different levels of control, allowing real-time robot operations in a complex environment. We have applied this obstacle avoidance scheme to robot arm using a new approach to the general problem of real-time manipulator control. We reformulated the manipulator control problem as direct control of manipulator motion in operational space-the space in which the task is originally described-rather than as control of the task's corresponding joint space motion obtained only after geometric and kinematic transformation. This method has been implemented in the COSMOS system for a PUMA 560 robot. Using visual sensing, real-time collision avoidance demonstrations on moving obstacles have been performed.}
+}
+
+@inproceedings{Connolly1990,
+  author    = {Connolly, C.I. and Burns, J.B. and Weiss, R.},
+  booktitle = {Proceedings., IEEE International Conference on Robotics and Automation},
+  title     = {Path planning using Laplace's equation},
+  year      = {1990},
+  volume    = {},
+  number    = {},
+  pages     = {2102-2106 vol.3},
+  doi       = {10.1109/ROBOT.1990.126315},
+  abstract  = {A method for planning smooth robot paths is presented. The method relies on the use of Laplace's equation to constrain the generation of a potential function over regions of the configuration space of an effector. Once the function is computed, paths may be found very quickly. These functions do not exhibit the local minima which plague the potential field method. Unlike decompositional and algebraic techniques. Laplace's equation is very well suited to computation on massively parallel architectures.}
+}
+
+@article{Burridge1999SequentialComposition,
+  title    = {Sequential Composition of Dynamically Dexterous Robot Behaviors},
+  author   = {Robert R. Burridge and Alfred A. Rizzi and Daniel E. Koditschek},
+  journal  = {The International Journal of Robotics Research},
+  year     = {1999},
+  volume   = {18},
+  pages    = {534 - 555},
+  doi      = {10.1177/02783649922066385},
+  abstract = { We report on our efforts to develop a sequential robot controller-composition technique in the context of dexterous “batting” maneuvers. A robot with a flat paddle is required to strike repeatedly at a thrown ball until the ball is brought to rest on the paddle at a specified location. The robot’s reachable workspace is blocked by an obstacle that disconnects the free space formed when the ball and paddle remain in contact, forcing the machine to “let go” for a time to bring the ball to the desired state. The controller compositions we create guarantee that a ball introduced in the “safe workspace” remains there and is ultimately brought to the goal. We report on experimental results from an implementation of these formal composition methods, and present descriptive statistics characterizing the experiments. }
+}
