@@ -60,6 +60,7 @@
 \usepackage{tikz}
 \usepackage{tkz-euclide}
 \usetikzlibrary{calc,angles, quotes, intersections}
+\pdfstringdefDisableCommands{\let\uppercase\relax} % to silence "Token not allowed in a PDF string" warning
 %%%%%% Manual package additions end %%%%%%
 
 \DeclarePairedDelimiter\ceil{\lceil}{\rceil}
@@ -71,7 +72,7 @@
 % Name and Surname
 \author{Oğuz Özdemir}
 % Thesis Title English and Turkish
-\title{METU Thesis Template}
+\title{METU Thesis Template} %TODO: Update titles
 \turkishtitle{ODTÜ Tez Şablonu}
 
 \date{Sep 2022}
@@ -82,9 +83,9 @@
 % dr : Dr.
 %
 % Director of Institute
-\director[prof]{Name Surname}
+\director[prof]{Halil Kalıpçılar}
 % Head of Department
-\headofdept[prof]{Name Surname}
+\headofdept[prof]{İlkay Ulusoy}
 %
 % Supervisor : English and Turkish
 \supervisor[assistprof]{Mustafa Mert Ankaralı}
@@ -114,9 +115,9 @@
 \committeememberi[assistprof]{Name Surname}
 \affiliationi{Computer Engineering, METU}
 % Second committee member is always your supervisor
-\committeememberii[assistprof]{Name Surname}
-\affiliationii{Computer Engineering, METU}
-
+\committeememberii[assistprof]{Mustafa Mert Ankaralı}
+\affiliationii{Electrical and Electronics Engineering, METU}
+% TODO: Fill also other committee members
 % IMPORTANT: If you are Ph.D. student your co-supervisor can not be in your 
 % examination committee.
 
@@ -135,8 +136,8 @@
 \affiliationv{JüriBölüm, Ankara University}
 %
 % Keywords : English & Turkish, Comma seperated
-\keywords{keywords, seperated, with, comma}
-\anahtarklm{virgülle, ayrılmış, anahtar, kelimeler}
+\keywords{Motion and Path Planning, Motion Control, Sequential Composition, Unmanned Surface Vehicles}
+\anahtarklm{Hareket ve Yol Planlama, Hareket Kontrolü, Sıralı Ardışık Bileşim, İnsansız Suüstü Araçları}
 %
 % Abstract in English
 %
@@ -185,7 +186,7 @@
 \input{chapters/chapter2.tex}
 \input{chapters/chapter3.tex}
 \input{chapters/chapter4.tex}
-
+\input{chapters/chapter5.tex}
 
 \input{chapters/references.tex}
 
