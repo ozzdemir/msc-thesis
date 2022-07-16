@@ -28,7 +28,7 @@
 \usepackage{amsmath,amssymb} % define this before the line numbering.
 % \usepackage{ruler}
 \usepackage{color}
-% \usepackage{cite}
+\usepackage{cite}
 % \usepackage[utf8x]{inputenc}
 % \usepackage{footnote}
 % \makesavenoteenv{tabular}
@@ -55,6 +55,14 @@
 % \usepackage{rotating}
 %\PassOptionsToPackage{figuresright}{rotating}
 
+%%%%%% Manual package additions start %%%%%%
+\usepackage{cleveref}
+\usepackage{tikz}
+\usepackage{tkz-euclide}
+\usetikzlibrary{calc,angles, quotes, intersections}
+\pdfstringdefDisableCommands{\let\uppercase\relax} % to silence "Token not allowed in a PDF string" warning
+%%%%%% Manual package additions end %%%%%%
+
 \DeclarePairedDelimiter\ceil{\lceil}{\rceil}
 \DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
 
@@ -64,7 +72,7 @@
 % Name and Surname
 \author{Oğuz Özdemir}
 % Thesis Title English and Turkish
-\title{METU Thesis Template}
+\title{METU Thesis Template} %TODO: Update titles
 \turkishtitle{ODTÜ Tez Şablonu}
 
 \date{Sep 2022}
@@ -75,9 +83,9 @@
 % dr : Dr.
 %
 % Director of Institute
-\director[prof]{Name Surname}
+\director[prof]{Halil Kalıpçılar}
 % Head of Department
-\headofdept[prof]{Name Surname}
+\headofdept[prof]{İlkay Ulusoy}
 %
 % Supervisor : English and Turkish
 \supervisor[assistprof]{Mustafa Mert Ankaralı}
@@ -107,9 +115,9 @@
 \committeememberi[assistprof]{Name Surname}
 \affiliationi{Computer Engineering, METU}
 % Second committee member is always your supervisor
-\committeememberii[assistprof]{Name Surname}
-\affiliationii{Computer Engineering, METU}
-
+\committeememberii[assistprof]{Mustafa Mert Ankaralı}
+\affiliationii{Electrical and Electronics Engineering, METU}
+% TODO: Fill also other committee members
 % IMPORTANT: If you are Ph.D. student your co-supervisor can not be in your 
 % examination committee.
 
@@ -128,27 +136,19 @@
 \affiliationv{JüriBölüm, Ankara University}
 %
 % Keywords : English & Turkish, Comma seperated
-\keywords{keywords, seperated, with, comma}
-\anahtarklm{virgülle, ayrılmış, anahtar, kelimeler}
+\keywords{Motion and Path Planning, Motion Control, Sequential Composition, Unmanned Surface Vehicles}
+\anahtarklm{Hareket ve Yol Planlama, Hareket Kontrolü, Sıralı Ardışık Bileşim, İnsansız Suüstü Araçları}
 %
 % Abstract in English
 %
 \abstract{
- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales augue sit amet eros maximus, sed venenatis metus vehicula. Proin vel ligula porta justo iaculis ultrices non a ex. Sed lacinia bibendum feugiat. Integer mollis ac quam eu malesuada. Pellentesque malesuada facilisis metus quis condimentum. Nulla eget odio eget arcu elementum fringilla. Vestibulum eget pretium libero. Ut fermentum eleifend enim, nec facilisis sapien iaculis eu. Curabitur volutpat turpis risus, sed sollicitudin velit imperdiet sit amet.
-
-Aliquam tristique dictum facilisis. Aliquam non erat sed ligula lobortis varius id eu est. Suspendisse dapibus auctor diam ut ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo lectus, ornare ac lectus eget, placerat ultrices nulla. Praesent sit amet sodales nibh. Sed vestibulum non lorem non scelerisque.
-
-Sed eget fringilla purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis id metus risus. Vestibulum tempor leo orci, non semper quam aliquet non. Nam vitae convallis dolor, lacinia mollis nunc. Vestibulum imperdiet ornare mauris eget blandit. Etiam venenatis mauris dictum urna convallis fringilla vitae non dui. Etiam sit amet venenatis turpis. Nulla facilisi. Etiam sed nulla pulvinar, ullamcorper mauris a, vulputate risus. Integer ligula nisi, porta sed dapibus ac, mattis at libero. Curabitur sodales lacus ac ante facilisis, ac condimentum ante suscipit. Proin aliquet mattis diam tempus fermentum. Phasellus quis congue ante, sed fringilla dui. 
+    \lipsum[1-2]
 }
 %
 % Turkish Abstract
 %
 \oz{
- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales augue sit amet eros maximus, sed venenatis metus vehicula. Proin vel ligula porta justo iaculis ultrices non a ex. Sed lacinia bibendum feugiat. Integer mollis ac quam eu malesuada. Pellentesque malesuada facilisis metus quis condimentum. Nulla eget odio eget arcu elementum fringilla. Vestibulum eget pretium libero. Ut fermentum eleifend enim, nec facilisis sapien iaculis eu. Curabitur volutpat turpis risus, sed sollicitudin velit imperdiet sit amet.\cite{paper1}
-
-Aliquam tristique dictum facilisis. Aliquam non erat sed ligula lobortis varius id eu est. Suspendisse dapibus auctor diam ut ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo lectus, ornare ac lectus eget, placerat ultrices nulla. Praesent sit amet sodales nibh. Sed vestibulum non lorem non scelerisque.
-
-Sed eget fringilla purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis id metus risus. Vestibulum tempor leo orci, non semper quam aliquet non. Nam vitae convallis dolor, lacinia mollis nunc. Vestibulum imperdiet ornare mauris eget blandit. Etiam venenatis mauris dictum urna convallis fringilla vitae non dui. Etiam sit amet venenatis turpis. Nulla facilisi. Etiam sed nulla pulvinar, ullamcorper mauris a, vulputate risus. Integer ligula nisi, porta sed dapibus ac, mattis at libero. Curabitur sodales lacus ac ante facilisis, ac condimentum ante suscipit. Proin aliquet mattis diam tempus fermentum. Phasellus quis congue ante, sed fringilla dui.  
+    \lipsum[1-2]
 } 
 %
 % Dedication 
@@ -157,9 +157,7 @@ Sed eget fringilla purus. Pellentesque habitant morbi tristique senectus et netu
 %
 % Acknowledgements   
 \acknowledgments{
- Sed eget fringilla purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis id metus risus. Vestibulum tempor leo orci, non semper quam aliquet non. Nam vitae convallis dolor, lacinia mollis nunc. Vestibulum imperdiet ornare mauris eget blandit. Etiam venenatis mauris dictum urna convallis fringilla vitae non dui. Etiam sit amet venenatis turpis. Nulla facilisi. Etiam sed nulla pulvinar, ullamcorper mauris a, vulputate risus. Integer ligula nisi, porta sed dapibus ac, mattis at libero. Curabitur sodales lacus ac ante facilisis, ac condimentum ante suscipit. Proin aliquet mattis diam tempus fermentum. Phasellus quis congue ante, sed fringilla dui.\cite{paper2}
-
-Nullam porta arcu id ultricies consequat. Suspendisse potenti. Morbi vel iaculis diam, semper mollis mi. Integer enim est, viverra et orci nec, porttitor euismod turpis. Curabitur non magna ut nisl mollis rutrum. Curabitur nulla libero, aliquam a magna sed, ullamcorper auctor orci. Donec lectus enim, mattis non est in, elementum fringilla nisi. Aenean imperdiet finibus turpis non mollis. Sed vulputate nisi nec leo blandit bibendum. Donec luctus augue facilisis, aliquam augue iaculis, fringilla ante. Praesent eget sem hendrerit odio tempor vulputate. Nam ac semper enim. Ut at massa sem. Nam at nulla fringilla mi commodo vulputate. 
+    \lipsum[1-3]
 }
 
 %
@@ -187,7 +185,8 @@ Nullam porta arcu id ultricies consequat. Suspendisse potenti. Morbi vel iaculis
 \input{chapters/chapter1.tex}
 \input{chapters/chapter2.tex}
 \input{chapters/chapter3.tex}
-
+\input{chapters/chapter4.tex}
+\input{chapters/chapter5.tex}
 
 \input{chapters/references.tex}
 
