@@ -1,16 +1,11 @@
-% CHAPTER 2
-\chapter{Literature Review and Background}
-\label{chapter:background}
+\chapter{Introduction}
+\label{chapter:introduction}
 
-This chapter focuses on the previous work on the domain and the concepts used in the proposed method.
-
-\section{Literature Review}
-\label{section:literature}
-Motion control and path planning are fundamental problems in robotics, where each tries to solve the problem: how to drive the robot to a target location without colliding with obstacles. 
+Motion control and path planning are fundamental problems in robotics, where each tries to solve the problem: how to drive the robot to a target location without colliding with obstacles.
 In the literature, different approaches exist that propose solutions to these problems with different assumptions, limitations, and resource requirements concerning environmental representation and motion models.
 
-The open-loop approach to this problem is to create an open-loop trajectory to be tracked by a closed-loop control strategy. Sampling-based planners such as PRM \cite{Kavraki1996}, RRT \cite{rrt2001}, and EST \cite{Est1999} are well-known examples of open-loop planners. 
-Later in the trajectory tracking stage, generated online path trackers follow a collision-free and possibly smooth path \cite{camacho2004} \cite{Amidi1991}. 
+The open-loop approach to this problem is to create an open-loop trajectory to be tracked by a closed-loop control strategy. Sampling-based planners such as PRM \cite{Kavraki1996}, RRT \cite{rrt2001}, and EST \cite{Est1999} are well-known examples of open-loop planners.
+Later in the trajectory tracking stage, generated online path trackers follow a collision-free and possibly smooth path \cite{camacho2004} \cite{Amidi1991}.
 Generally speaking, sampling-based planners' trajectories are not required to be smooth and may require an additional smoothing layer before the path following stage. % TODO: May be extended with steering / forward propagation functions, i.e. control-based planning, usage with sampling based planners which results in smoother and more viable trajectories. Ref: Section 7.5.1 of \cite{Lipson2001}
 
 The closed-loop approach to the path planning and motion control problem requires the creation of a control policy, which would bring the agent to the goal configuration from any valid initial configuration.
@@ -22,16 +17,23 @@ The use of harmonic functions for global navigation is another local-minima-free
 Since creating a single lightweight control policy over the whole configuration space that would forward the agent to the goal configuration while avoiding collisions is a challenging (and mostly impossible) task, hybrid approaches also exist.
 
 Hybrid methods utilize the open-loop approach's simplicity with the closed-loop approach's robustness.
-Sampling-based neighborhood graph constructs a graph whose deployments probabilistically cover the configuration space in its initialization phase \cite{sng2004}. 
+Sampling-based neighborhood graph constructs a graph whose deployments probabilistically cover the configuration space in its initialization phase \cite{sng2004}.
 The constructed graph is later used to find the paths between the goal deployment and any other deployment, and local navigation functions are applied to each deployment.
 This approach enables the use of compositions of navigation functions in rather complex environments. Work presented in \cite{karagoz2020MpcGraph} follows a similar schema, but it uses Model Predictive Control (MPC) for the motion control inside the deployments.
 Schemas presented in \cite{golbol2018RGTrees} and \cite{Ege2019}, on the other hand, uses the ideas given in \cite{Burridge1999SequentialComposition} and \cite{rrt2001} to create a funnel tree with a lightweight control policy defined over the funnels.
 Another example of a hybrid method that creates a collision-free feedback law over given cell decompositions is proposed in \cite{Lindemann2009}.
 
-\section{Feedback Linearization}
-\label{section:feedback-linearization}
-\lipsum
+\section{Contributions}
+\label{section:contributions}
 
-\section{Sequential Composition}
-\label{section:sequential-composition}
-\lipsum
+Our contributions are as follows:
+
+\begin{itemize}
+    \item There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain
+    \item There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain
+    \item There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain
+\end{itemize}
+
+\section{The Outline of the Thesis}
+\label{section:outline}
+\lipsum[1-3]
