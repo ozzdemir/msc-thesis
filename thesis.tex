@@ -73,7 +73,7 @@
 \author{Oğuz Özdemir}
 % Thesis Title English and Turkish
 \title{Feedback Motion Planning of a Novel Fully Actuated Unmanned Surface Vehicle via Sequential Composition of Random Elliptical Funnels}
-\turkishtitle{Tam Tahrikli İnsansız Yüzey Aracının Rastgele Eliptik Hunilerin Sıralı Bileşimi Yöntemi ile Geri Beslemeli Hareket Planlaması}
+\turkishtitle{Tam Tahrikli İnsansız Yüzey Aracının Rassal Eliptik Hunilerin Sıralı Bileşimi ile Geri Beslemeli Hareket Planlaması}
 
 \date{Sep 2022}
  
@@ -141,14 +141,25 @@
 %
 % Abstract in English
 %
+% Guide on abstract:
+% * The structure of the abstract should mirror the structure of the whole thesis, and should represent all its major elements.
+% * It should express your thesis (or central idea) and your key points; it should also suggest any implications or applications of the research you discuss in the paper.
 \abstract{
-    \lipsum[1-2]
+    This thesis proposes and analyzes a motion planning and control schema for unmanned surface vehicles that fuses sampling-based approaches' probabilistic completeness with closed-loop approaches' robustness.
+    The Proposed schema is based on the sequential composition of elliptical funnels, and it consists of two stages: tree generation and motion control.
+    For validation of the approach, we carried out experiments using both simulation and physical setup besides the mathematical analysis. 
+    In order to have a common interface for both the simulations and the physical setup and to reduce duplication of work done, we implemented the approach as a ROS (Robot Operating System) node that can interface both similarly.
+    Our results show that the proposed method handles the disturbances with minimal disruptions in the stability of the system. Furthermore, elliptic funnels improve the sparsity of the tree compared to the circular ones, thus, resulting in fewer mode changes.
 }
 %
 % Turkish Abstract
 %
 \oz{
-    \lipsum[1-2]
+    Bu tez, insansız su üstü araçları için, örneklemeye dayalı yaklaşımların olasılıksal bütünlünü kapalı döngü yaklaşımların gürbüzlüğü ile birleştiren bir hareket planlama ve kontrol şeması önermekte, ve analiz etmektedir.
+    Eliptik hunilerin sıralı bileşimine dayandırdığımız çözüm önerisi, ağaç oluşturma ve hareket kontrolü olmak üzere iki aşamadan oluşmaktadır.
+    Çalışmamızda, çözümümüzün geçerliliğinin gösterimi için matematiksel analizin yanı sıra hem simülasyon hem de fiziksel sistem kullanılarak deneyler gerçekleştirilmiştir.
+    Önerlilen yaklaşım, simülasyon ve fiziksel sistem testlerinde ortak arayüz kullanabilmek ve gereken iş tekrarını azaltmak için, her ikisini de benzer şekilde arayüzleyebilen bir ROS (Robot İşletim Sistemi) düğümü olarak uygulanmıştır.
+    Sonuçlarımız, önerilen yöntemin sistem kararlılığında minimum bozulma ile bozucu etkenleri ele aldığını göstermektedir. Ayrıca, eliptik hunilerin, dairesel olanlara kıyasla ağacın seyrekliğini iyileştirerek, hareket kontrolü aşamasında daha az mod değişikliğiyle sonuçlandığı gözlenmiştir.
 } 
 %
 % Dedication 
@@ -166,12 +177,12 @@
 \begin{document}
 % Preliminaries
 \begin{preliminaries}
-% If you are willing to use any custom stuff before Chapters, put it here
-% Such as List of Abbreviations
-% Check the abbreviations.tex for a template list of abbreviations
+    % If you are willing to use any custom stuff before Chapters, put it here
+    % Such as List of Abbreviations
+    % Check the abbreviations.tex for a template list of abbreviations
 
-\input{chapters/abbreviations}
-% End of Preliminaries
+    \input{chapters/abbreviations}
+    % End of Preliminaries
 \end{preliminaries}
 %   
 % Latex content Goes Here 
